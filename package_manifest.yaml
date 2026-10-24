@@ -1,0 +1,18 @@
+manifestVersion: 1
+
+package:
+  name: robonix.skill.room_check
+  version: 0.1.0
+  description: Check named rooms one by one and report what was seen, after asking what to check.
+  tags: [skill, inspection, navigation, camera, scene]
+  maintainers: [wheatfox <wheatfox17@icloud.com>]
+  license: MulanPSL-2.0
+
+build: bash scripts/build.sh
+start: bash scripts/start.sh
+
+capabilities:
+  - name: robonix/skill/room_check/driver
+    path: capabilities/driver.v1.toml
+  - name: robonix/skill/room_check/visit
+    path: capabilities/visit.v1.toml

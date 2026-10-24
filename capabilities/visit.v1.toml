@@ -1,0 +1,12 @@
+[contract]
+id          = "robonix/skill/room_check/visit"
+version     = "1"
+kind        = "skill"
+idl         = "room_check/srv/VisitRegion.srv"
+description = "Drive to a named region through navigation and return one camera photo taken there."
+
+[mode]
+type = "rpc"
+
+[semantics]
+user_invocable = true

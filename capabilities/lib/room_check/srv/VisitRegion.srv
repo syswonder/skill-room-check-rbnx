@@ -1,0 +1,10 @@
+# A stable region ID or a unique region name returned by scene/list_regions.
+string region
+---
+# Whether the robot reached the region. False leaves image_base64 empty.
+bool arrived
+# Keep these fields at response top level. Pilot recognizes this shape and
+# attaches image_base64 to the next VLM reasoning round as a vision input.
+string image_base64
+string format
+string detail
