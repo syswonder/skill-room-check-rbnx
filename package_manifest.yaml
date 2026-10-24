@@ -13,6 +13,8 @@ start: bash scripts/start.sh
 
 capabilities:
   - name: robonix/skill/room_check/driver
+    transport: grpc
     path: capabilities/driver.v1.toml
   - name: robonix/skill/room_check/visit
+    transport: mcp
     path: capabilities/visit.v1.toml
